@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://www.google.com -->
+<html>
+	<head>
+		<title>Progress Bar Example</title>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/progressbar.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/progressbar.css">
+		<script type="text/javascript">
+			var button;
+			function test(control) {
+				button = $(control);
+				button.attr('disabled', true);
+				AnimateProgressBar('test', '217', true);
+				window.setTimeout(Complete, 100);
+			}
+
+			function Complete() {
+				CompleteProgressBar('test', '217', '222', true, function () { }, function () {
+					button.attr('disabled', false);
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<div class="Textbox">
+			<div class="TextProgressBar" id="test"></div>
+			<input type="text" class="ProgressBar"/>
+		</div>
+		<input type="button" value="submit" id="submitbutton" onclick="test('#submitbutton');"/>
+	</body>
+</html>

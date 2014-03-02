@@ -1,0 +1,38 @@
+.Textbox {
+    background: url('../Images/Textbox.gif') no-repeat;
+    height: 20px;
+    width: 222px;
+}
+
+.TextProgressBar.Complete {
+    background-position: left center;
+    width: 222px;
+    max-width: 222px;
+    height: 20px;
+    margin: 0px;
+}
+
+.TextProgressBar {
+    background: url('../Images/ProgressBar.gif') no-repeat;
+    height: 22px;
+    max-width: 217px;
+    background-position: right center;
+    position: absolute;
+    margin: 0px 0px 0px 3px;
+    z-index:1;
+}
+
+input.ProgressBar {
+    border: none;
+    outline: none;
+    font-size: .7em;
+    background: url('../Images/Transparent.gif');
+    background-color: transparent;
+    position: relative;
+    left: 3px;
+    width: 213px; 
+	height: 22px;
+    font-family: Arial;
+    display: block;
+	z-index:3;
+}
